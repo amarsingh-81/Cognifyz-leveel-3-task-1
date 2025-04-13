@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="style.css">
+</head>
+<body>
+
+  <div class="image-gallery">
+    <h2>Image Gallery</h2>
+    <p>Image Manipulation</p>
+    <div class="row">
+      <div class="column">
+        <img src="Virat.jpg" alt=""  onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="Rohit.jpg" alt=""  onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="Enjoy2.jpg" alt=""  onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="enjoy1.jpg" alt=""  onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="Rohit1.jpg" alt=""  onclick="myFunction(this);">
+      </div><div class="column">
+        <img src="Final.jpg" alt=""  onclick="myFunction(this);">
+      </div>
+    </div>
+
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
+  </div>
+
+  <div class="slideshow">
+    <h2>Image Slideshow</h2>
+
+    <div class="slideshow-container loop">
+      <div class="wrapper">
+          <img src="Virat.jpg">
+          <img src="Rohit.jpg">
+          <img src="enjoy1.jpg">
+          <img src="Enjoy2.jpg">
+          <img src="Rohit1.jpg">
+          <img src="Final.jpg">
+
+      </div>
+    </div>
+  </div>
+  <script>
+    function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  expandImg.src = imgs.src;
+  expandImg.parentElement.style.display = "block";
+}
+  </script>
+
+</body>
+</html>
